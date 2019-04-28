@@ -1,0 +1,25 @@
+{
+  "name": "redesing-sofisa",
+  "version": "0.1.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadsonsantos/redesign-sofisa.git"
+  },
+  "author": "Jadson dos Santos (jadsondossantos5@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jadsonsantos/redesign-sofisa/issues"
+  },
+  "homepage": "https://github.com/jadsonsantos/redesign-sofisa#readme"
+}
