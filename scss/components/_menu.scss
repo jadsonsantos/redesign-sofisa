@@ -1,0 +1,115 @@
+@import "base/_main";
+
+.header {
+
+    color: #fff;
+    background-color: transparent;
+
+    .container {
+        display: flex;
+        justify-content: space-between;    
+        align-items: center;
+    }
+
+    .main-menu, .user-menu {
+        display: flex;
+
+        li  {
+            padding: 0 20px;
+        }
+    }
+
+    .user-menu {
+
+        .sign-in {    
+            padding: 10px 20px;
+        }
+
+        .sign-up {
+            @include btn($color-0, transparent, 5px);
+            text-transform: uppercase;
+        }
+    }
+}
+
+.fullscreen {
+    background-image: url('/images/header-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+
+    padding: 50px 0;
+    height: 100vh;
+    color: #fff;
+
+    .container {    
+        
+        .composition {
+            display: flex;
+            justify-content: center;    
+            align-items: center;
+            padding: 50px 0 0;
+            
+            &-infos {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                
+                @media(min-width: 1024px) {
+                    width: 615px;
+                }
+    
+                h2 {
+                    font-size: 40px;
+                    font-weight: 500;
+                    
+                    @media(min-width: 1024px) {
+                        font-size: 70px;    
+                    }
+
+                    .plus {
+                        color: $color-5;
+                    }
+                }
+
+                p {    
+                    margin: 20px 0;
+                    font-size: 22px;
+                }
+    
+                .btn {    
+                    margin: 20px 0 0;
+                    
+                    .apple, .google {
+                        width: 250px;
+                        @include btn($color-0, transparent, 5px);
+    
+                        span {
+                            display: block;
+                            font-size: 12px;
+                        }
+
+                        .plataform {
+                            font-size: 22px;
+                        }
+                    }
+
+                    .google {
+                        margin-left: 20px;
+                    }
+                }
+            }
+    
+            &-image {
+                flex: 1;
+                margin-right: -200px;
+
+                @media(max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}

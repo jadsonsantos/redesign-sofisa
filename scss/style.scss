@@ -1,1 +1,26 @@
-@import 'reset';
+@import '_reset';
+@import 'components/_menu';
+@import 'components/_footer';
+@import 'components/_lightbox';
+@import 'components/get-started';
+@import '_fonts';
+@import 'base/_geral';
+@import 'base/_vars';
+
+
+.container {
+    width: 100%;
+    max-width: 1290px;
+    margin: auto;
+    // padding: 0 30px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @media(min-width: 1024px) {
+        flex-direction: row;
+    }
+}
