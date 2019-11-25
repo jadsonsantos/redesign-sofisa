@@ -1,4 +1,48 @@
 .steps {
-    background: $color-7;
+    padding: 110px 0 167px;
+    background: linear-gradient(90deg, rgba(81,184,144,1) 0%, rgba(101,214,183,1) 100%);
     color: $white;
+
+    &-infos {
+
+        .steps-text {
+            margin-bottom: 23px;
+            color: $white;
+
+            h2 {
+                margin-bottom: 26px;
+                font-family: "Inter SemiBold";
+                font-size: 32px;
+                line-height: 39px;
+            }
+    
+            h3 {
+                font-size: 17px;
+                line-height: 24px;
+            }
+        }
+
+
+        .steps-path {
+            display: flex;
+            justify-content: space-between;
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            .step {
+
+                &-number {
+                    padding: 33px 42px;
+                    margin-bottom: 23px;
+                    font: 35px "Inter Bold";
+                    line-height: 42px;
+                    border: 2px solid $white;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
 }
