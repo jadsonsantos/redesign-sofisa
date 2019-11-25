@@ -1,0 +1,91 @@
+.fullscreen {
+    background-image: url('/images/header-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+
+    padding: 22px 0 31px;
+    color: $white;
+
+    .container {    
+        
+        .composition {
+            display: flex;
+            justify-content: center;    
+            align-items: center;
+            padding: 50px 0 0;
+            
+            &-infos {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                
+                @media(min-width: 1024px) {
+                    width: 615px;
+                }
+    
+                h2 {
+                    font: 40px "Inter Bold";
+                    line-height: 85px;
+                    
+                    @media(min-width: 1024px) {
+                        font-size: 70px;    
+                    }
+
+                    .plus {
+                        color: $color-5;
+                    }
+                }
+
+                p {    
+                    margin: 20px 0;
+                    font: 22px "Inter Regular";
+                    line-height: 1.5;
+                }
+    
+                .btn {    
+                    margin: 20px 0 0;
+                    
+                    .apple, .google {
+                        width: 250px;
+                        height: 60px;
+                        @include btn($color-0, transparent, 5px);
+
+                        figure {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+
+                    .apple {
+                        padding-top: 4px;
+                    }
+
+                    .google {
+                        margin-left: 20px;
+                    }
+                }
+
+                .social-media {
+
+                    margin: 32px 0 0;
+
+                    i {
+                        margin-right: 25px;
+                    }
+                }
+            }
+    
+            &-image {
+                flex: 1;
+                margin-right: -200px;
+
+                @media(max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}
