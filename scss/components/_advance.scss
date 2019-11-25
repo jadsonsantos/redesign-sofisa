@@ -1,0 +1,123 @@
+@import "base/main";
+
+.advance {
+    margin: 130px 0 106px;
+    color: $color-3;
+
+    .container {
+        flex-direction: column;
+
+        .advance-presentation {
+            margin-bottom: 119px;
+            text-align: center;
+
+            h2 {
+                margin-bottom: 18px;
+                font: 46px "Inter SemiBold";
+                color: $color-6;
+            }
+    
+            h3 {
+                font: 20px "Inter Regular";
+                line-height: 24px;
+                color: $color-3;
+            }
+        }
+        
+
+        .advance-calc {
+            display: flex;
+            justify-content: space-around;
+
+            .advance-calculator {
+                width: 488px;
+                border: 1px solid  $color-8;
+
+                .presentation {
+                    padding: 21px 0 30px;
+                    border-bottom: 1px solid $color-8;
+                    
+                    h3 {
+                        font: 24px "Inter SemiBold";
+                        text-align: center;
+                    }
+                }
+
+                .scale {
+                    padding: 26px;
+
+                    .calc-title {
+                        font: 22px "Inter Regular";
+                    }
+
+                    .calc-amount, .calc-installments {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    
+                    .amount, .installments {
+                        font: 22px "Inter SemiBold";
+                    }
+                }
+
+
+                .calculator {
+                    padding: 26px;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .total-installment, .rate {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .rate {
+                        text-align: right;
+                    }
+                }
+
+                .request-proposal {
+                
+                    button {
+                        width: 100%;
+                        padding: 26px 0;
+                        font: 24px "Inter SemiBold";
+                        color: $white;
+                        background-color: $color-4;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .advance-benefits {
+
+                .benefit {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 62px;
+
+                    figure {
+                        display: flex;
+                    }
+
+                    .info {
+                        margin-left: 28px;
+
+                        h4 {
+                            margin-bottom: 10px;
+                            font: 25px "Inter SemiBold";
+                            line-height: 30px;
+                        }
+
+                        h5 {
+                            font: 17px "Inter Regular";
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
