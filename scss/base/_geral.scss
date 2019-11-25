@@ -2,6 +2,11 @@
     width: 1800px;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;    
+}
+
 img {    
     max-width: 100%;
 }
