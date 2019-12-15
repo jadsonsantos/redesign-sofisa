@@ -13,7 +13,11 @@
 			<section class="fullscreen">
 				<header class="header">
 					<div class="container flex">
-						<div><img src="/images/sofisa-logo.png" alt="Logo Sofisa"></div>
+						<div>
+							<a href="/">
+								<img src="/images/sofisa-logo.png" alt="Logo Sofisa">
+							</a>
+						</div>
 						<ul class="main-menu flex">
 							<li><a href="#">investimentos</a></li>
 							<li><a href="#">Empréstimos</a></li>
@@ -44,9 +48,15 @@
 								</div>
 							</div>
 							<div class="social-media">
+								<a href="/" target="_blank">
 									<i class="fab fa-twitter"></i>
+								</a>
+								<a href="/" target="_blank">
 									<i class="fab fa-facebook-f"></i>
+								</a>
+								<a href="/" target="_blank">
 									<i class="fab fa-linkedin-in"></i>
+								</a>
 							</div>
 						</div>
 						<div class="composition-image">
@@ -68,12 +78,22 @@
 							</div>
 							<div class="scale">
 								<div class="calc-amount">
-									<span class="calc-title">Valor</span>
-									<span class="amount">R$ 130.000</span>
+									<div class="calc-container">
+										<span class="calc-title">Valor</span>
+										<span class="amount">R$ 130.000</span>
+									</div>
+									<div class="slide-container">
+										<input type="range" min="100" max="100000" value="500" class="slider" id="myRange">
+									</div>
 								</div>
 								<div class="calc-installments">
-									<span class="calc-title">Parcelas</span>
-									<span class="installments">36x</span>
+									<div class="calc-container">
+										<span class="calc-title">Parcelas</span>
+										<span class="installments">36x</span>
+									</div>
+									<div class="slide-container">
+										<input type="range" min="1" max="60" value="12" class="slider" id="myRange">
+									</div>
 								</div>
 							</div>
 							<div class="calculator">
@@ -218,6 +238,7 @@
 		<!-- </div> -->
         
 		<script src="js/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://kit.fontawesome.com/7280a49faa.js" crossorigin="anonymous"></script>
     </body>
 </html>
