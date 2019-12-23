@@ -32,6 +32,7 @@
             .advance-calculator {
                 width: 488px;
                 border: 1px solid  $color-8;
+                border-radius: 8px;
 
                 .presentation {
                     padding: 21px 0 30px;
@@ -49,6 +50,10 @@
 
                     .calc-amount {
                         padding-bottom: 30px;
+
+                        .value::before {
+                            content: "R$ ";
+                        }
                     }
 
                     .calc-title {
@@ -64,6 +69,13 @@
                     
                     .amount, .installments {
                         font: 22px "Inter SemiBold";
+                    }
+
+                    .calc-installments {
+
+                        .value::after {
+                            content: "x";
+                        }
                     }
                 }
 

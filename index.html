@@ -80,19 +80,23 @@
 								<div class="calc-amount">
 									<div class="calc-container">
 										<span class="calc-title">Valor</span>
-										<span class="amount">R$ 130.000</span>
+										<span class="amount">
+											<span class="value">130.000</span>
+										</span>
 									</div>
 									<div class="slide-container">
-										<input type="range" min="100" max="100000" value="500" class="slider" id="myRange">
+										<input type="range" min="60000" max="2000000" step="5000" value="500" class="slider" id="">
 									</div>
 								</div>
 								<div class="calc-installments">
 									<div class="calc-container">
 										<span class="calc-title">Parcelas</span>
-										<span class="installments">36x</span>
+										<span id="demo" class="installments">
+											<span class="value">36</span>
+										</span>
 									</div>
 									<div class="slide-container">
-										<input type="range" min="1" max="60" value="12" class="slider" id="myRange">
+										<input type="range" min="36" max="180" step="36" value="12" class="slider" id="myRange">
 									</div>
 								</div>
 							</div>
@@ -237,8 +241,8 @@
 			</div>
 		<!-- </div> -->
         
-		<script src="js/main.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://kit.fontawesome.com/7280a49faa.js" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
     </body>
 </html>
