@@ -21,9 +21,10 @@
         background-color: $color-0;
         color: $color-4;
         border-radius: 9px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+        box-shadow: 0 4px 8px 0 rgba(234, 234, 234, 0.7), 0 6px 20px 0 rgba(218, 214, 214, 0.5);
 
-        .title {    
+        .title {
+            font-family: $font-3;    
             font-size: 25px;
         }
 
@@ -35,8 +36,15 @@
         .apply {
 
             a {
-                @include btn($color-0, $color-4, 0);
+                @include btn($color-0, $color-4, 5px);
+                padding: 16px 0;
+                width: 275px;
+                height: 62px;
+                font-family: $font-2;
+                font-size: 23px;
                 font-weight: 700;
+                line-height: 28px;
+                text-align: center;
             }
         }
     }

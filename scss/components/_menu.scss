@@ -19,6 +19,17 @@
         }
     }
 
+    .main-menu {
+        
+        a {
+
+            &:hover {
+                padding: 0 0 10px;
+                border-bottom: 3px solid $color-5;
+            }
+        }
+    }
+
     .user-menu {
 
         .sign-in {    
@@ -28,6 +39,11 @@
         .sign-up {
             @include btn($color-0, transparent, 5px);
             text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover {
+                
+            }
         }
     }
 }
