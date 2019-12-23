@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "animate.css": "^3.7.2"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.5",
     "gulp": "^4.0.1",
