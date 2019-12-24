@@ -15,7 +15,6 @@
     }
 
     &-infos {
-        width: 1085px;
         padding: 80px 50px;
         float: right;
         position: absolute;
@@ -23,6 +22,10 @@
         color: $color-4;
         border-radius: 9px;
         box-shadow: 0 4px 8px 0 rgba(234, 234, 234, 0.7), 0 6px 20px 0 rgba(218, 214, 214, 0.5);
+
+        @media(min-width: 1024px) {
+            width: 1085px;
+        }
 
         .title {
             font-family: $font-3;    

@@ -14,9 +14,12 @@
         border-bottom: 1px solid rgba(73, 73, 73, $alpha: 0.4);
 
         .about {
-            width: 350px;
             line-height: 2;
             color: $color-3;
+            
+            @media(min-width: 1024px) {
+                width: 350px;
+            }
 
             img {
                 margin-bottom: 30px;

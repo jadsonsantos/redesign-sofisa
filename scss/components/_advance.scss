@@ -1,7 +1,7 @@
 @import "base/main";
 
 .advance {
-    margin: 130px 0 106px;
+    margin-top: 130px;
     color: $color-3;
 
     .container {
@@ -26,15 +26,21 @@
         
 
         .advance-calc {
-            display: flex;
             justify-content: space-around;
 
+            & > div {
+                margin-bottom: 100px;
+            }
+
             .advance-calculator {
-                width: 488px;
                  -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
                     -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
                          box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
                 border-radius: 8px;
+
+                @media(min-width: 1024px) {
+                    width: 488px;
+                }
 
                 .presentation {
                     padding: 21px 0 30px;
