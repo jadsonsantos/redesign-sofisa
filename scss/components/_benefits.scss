@@ -1,7 +1,7 @@
 .benefits {
 
     .content {
-        margin: auto;
+        margin: -70px auto 0;
         padding: 30px 70px;
         width: 1170px;
         display: flex;
@@ -10,6 +10,8 @@
         -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.16);
            -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.16);
                 box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.16);
+        background-color: $white;
+        z-index: 9;
     }
 
     &-item {
