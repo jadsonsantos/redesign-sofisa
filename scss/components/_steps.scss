@@ -36,10 +36,9 @@
                 &-number {
                     padding: 33px 42px;
                     margin-bottom: 23px;
-                    font: 35px "Inter Bold";
-                    line-height: 42px;
                     border: 2px solid $white;
                     border-radius: 50%;
+                    @include font-source-sans($ff: $font-4, $size: 35px, $lh: 42px);
                 }
             }
         }

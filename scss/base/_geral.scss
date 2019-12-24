@@ -12,8 +12,8 @@
     max-width: 1290px;
     margin: auto;
     // padding: 0 30px;
-    width: calc(100% - 20px);
-    margin-left: 10px;
+    width: calc(100% - 30px);
+    margin-left: 15px;
 
     @include mq("tablet-wide") {
         width: calc(100% - 40px);
