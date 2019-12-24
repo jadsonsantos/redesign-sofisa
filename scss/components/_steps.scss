@@ -3,6 +3,10 @@
     background: linear-gradient(90deg, rgba(81,184,144,1) 0%, rgba(101,214,183,1) 100%);
     color: $white;
 
+    &-content {
+        justify-content: space-between;
+    }
+
     &-infos {
 
         .steps-text {

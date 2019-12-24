@@ -1,23 +1,39 @@
 @import "base/main";
 
 .advance {
-    margin-top: 130px;
+    margin: 80px 0 30px;
     color: $color-3;
+    
+    @include mq("tablet-wide") {
+        margin-top: 130px;
+    }
 
     .container {
         flex-direction: column;
 
         .advance-presentation {
-            margin-bottom: 119px;
+            margin-bottom: 80px;
             text-align: center;
+            
+            @include mq("tablet-wide") {
+                margin-bottom: 120px;
+            }
 
             h2 {
                 margin-bottom: 18px;
-                @include font-source-sans($ff: $font-3, $size: 46px, $colour: $color-6);
+                @include font-source-sans($ff: $font-3, $colour: $color-6);
+
+                @include mq("tablet-wide") {
+                    font-size: 46px;
+                }
             }
     
             h3 {
-                @include font-source-sans($ff: $font-1, $size: 20px, $colour: $color-3, $lh: 24px);
+                @include font-source-sans($ff: $font-1, $colour: $color-3, $lh: 24px);
+
+                @include mq("tablet-wide") {
+                    font-size: 20px;
+                }
             }
         }
         
@@ -26,7 +42,11 @@
             justify-content: space-around;
 
             & > div {
-                margin-bottom: 100px;
+                margin-bottom: 80px;
+                
+                @include mq("tablet-wide") {
+                    margin-bottom: 100px;
+                }
             }
 
             .advance-calculator {

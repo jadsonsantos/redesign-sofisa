@@ -13,6 +13,10 @@
         justify-content: space-between;
         border-bottom: 1px solid rgba(73, 73, 73, $alpha: 0.4);
 
+        & > div {
+            margin-bottom: 40px;
+        }
+
         .about {
             line-height: 2;
             color: $color-3;
