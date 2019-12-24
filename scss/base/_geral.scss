@@ -13,7 +13,7 @@
     width: calc(100% - 20px);
     margin-left: 10px;
 
-    @media(min-width: 1024px) {
+    @include mq("tablet-wide") {
         width: calc(100% - 40px);
         margin: auto;    
     }
@@ -25,7 +25,7 @@
     justify-content: center;
     flex-direction: column;
 
-    @media(min-width: 1024px) {
+    @include mq("tablet-wide") {
         flex-direction: row;
     }
 }

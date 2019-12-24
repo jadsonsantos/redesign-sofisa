@@ -21,14 +21,14 @@
                 flex-direction: column;
                 flex: 1;
                 
-                @media(min-width: 1024px) {
+                @include mq("tablet-wide") {
                     width: 615px;
                 }
     
                 h2 {
                     font: 40px "Inter Bold";
                     
-                    @media(min-width: 1024px) {
+                    @include mq("tablet-wide") {
                         font-size: 70px;    
                         line-height: 85px;
                     }
@@ -42,7 +42,7 @@
                     margin: 20px 0;
                     font: 22px "Inter Regular";
                     
-                    @media(min-width: 1024px) {
+                    @include mq("tablet-wide") {
                         line-height: 1.5;
                     }
                 }
@@ -67,7 +67,7 @@
 
                     .google {
 
-                        @media(min-width: 1024px) {
+                        @include mq("tablet-wide") {
                             margin-left: 20px;
                         }
                     }

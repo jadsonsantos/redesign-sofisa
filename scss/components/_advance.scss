@@ -38,7 +38,7 @@
                          box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
                 border-radius: 8px;
 
-                @media(min-width: 1024px) {
+                @include mq("tablet-wide") {
                     width: 488px;
                 }
 

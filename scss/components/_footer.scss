@@ -3,7 +3,7 @@
 .footer {
     padding: 50px 0;
     
-    @media(min-width: 1024px) {
+    @include mq("tablet-wide") {
         padding: 100px 0 130px;
     }
 
@@ -17,7 +17,7 @@
             line-height: 2;
             color: $color-3;
             
-            @media(min-width: 1024px) {
+            @include mq("tablet-wide") {
                 width: 350px;
             }
 
