@@ -1,7 +1,11 @@
 .steps {
-    padding: 110px 0 167px;
+    padding: 80px 0;
     background: linear-gradient(90deg, rgba(81,184,144,1) 0%, rgba(101,214,183,1) 100%);
     color: $white;
+
+    @include mq("tablet-wide") {
+        padding: 110px 0 167px;
+    }
 
     &-content {
         justify-content: space-between;
@@ -15,7 +19,10 @@
 
             h2 {
                 margin-bottom: 26px;
-                @include font-source-sans($ff: $font-3, $size: 32px, $lh: 39px);
+                
+                @include mq("tablet-wide") {
+                    @include font-source-sans($ff: $font-3, $size: 32px, $lh: 39px);
+                }
             }
     
             h3 {

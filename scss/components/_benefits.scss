@@ -3,18 +3,18 @@
 .benefits {
 
     &-content {
-        margin: -70px auto 0;
         padding: 30px 70px;
         justify-content: space-around;
-        border-radius: 9px;
-        -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.16);
-           -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.16);
-                box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.16);
         background-color: $white;
         z-index: z("benefits-content");
-
+        
         @include mq("tablet-wide") {
+            margin: -70px auto 0;
             width: 1170px;
+            border-radius: 9px;
+            -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.16);
+               -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.16);
+                    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.16);
         }
     }
 

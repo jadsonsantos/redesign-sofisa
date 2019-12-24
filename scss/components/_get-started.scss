@@ -1,6 +1,8 @@
 .get-started {
     
-    margin-top: 142px;
+    @include mq("tablet-wide") {
+        margin-top: 142px;
+    }
 
     &-content {
         background-image: url("/images/investidor.png");
@@ -15,16 +17,17 @@
     }
 
     &-infos {
-        padding: 80px 50px;
-        float: right;
+        padding: 40px 20px;
         position: absolute;
         background-color: $color-0;
         color: $color-4;
-        border-radius: 9px;
-        box-shadow: 0 4px 8px 0 rgba(234, 234, 234, 0.7), 0 6px 20px 0 rgba(218, 214, 214, 0.5);
 
         @include mq("tablet-wide") {
+            padding: 80px 50px;
             width: 1085px;
+            float: right;
+            border-radius: 9px;
+            box-shadow: 0 4px 8px 0 rgba(234, 234, 234, 0.7), 0 6px 20px 0 rgba(218, 214, 214, 0.5);
         }
 
         .title {

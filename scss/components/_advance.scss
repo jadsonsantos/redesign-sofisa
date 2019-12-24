@@ -41,21 +41,15 @@
         .advance-calc {
             justify-content: space-around;
 
-            & > div {
-                margin-bottom: 80px;
-                
-                @include mq("tablet-wide") {
-                    margin-bottom: 100px;
-                }
-            }
-
             .advance-calculator {
+                margin-bottom: 80px;
                  -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
                     -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
                          box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
                 border-radius: 8px;
 
                 @include mq("tablet-wide") {
+                    margin-bottom: 100px;
                     width: 488px;
                 }
 
@@ -64,8 +58,12 @@
                     border-bottom: 1px solid $color-9;
                     
                     h3 {
-                        font: 24px "Inter SemiBold";
+                        font-family: $font-3;
                         text-align: center;
+
+                        @include mq("tablet-wide") {
+                            font: 24px;
+                        }
                     }
                 }
 
@@ -82,7 +80,11 @@
                     }
 
                     .calc-title {
-                        @include font-source-sans($ff: $font-1, $size: 22px, $lh: 26px);
+                        font-family: $font-1;
+
+                        @include mq("tablet-wide") {
+                            @include font-source-sans($size: 22px, $lh: 26px);
+                        }
                     }
 
                     .calc-container {
@@ -92,7 +94,11 @@
                     }
                     
                     .amount, .installments {
-                        font: 22px "Inter SemiBold";
+                        font-family: "Inter SemiBold";
+
+                        @include mq("tablet-wide") {
+                            font-size: 22px;
+                        }
                     }
 
                     .calc-installments {
@@ -152,7 +158,11 @@
                     .total-installment {
 
                         span:last-child {
-                            @include font-source-sans($ff: $font-3, $size: 21px, $lh: 25px);
+                            font-family: $font-3;
+
+                            @include mq("tablet-wide") {
+                                @include font-source-sans($size: 21px, $lh: 25px);
+                            }
                         }
                     }
 
@@ -160,13 +170,20 @@
                         text-align: right;
 
                         span:last-child {
-                            @include font-source-sans($ff: $font-3, $size: 19px, $lh: 23px);
+                            font-family: $font-3;
+
+                            @include mq("tablet-wide") {
+                                @include font-source-sans($size: 19px, $lh: 23px);                            
+                            }
                         }
                     }
 
                     .result-title {
-                        font-size: 23px;
-                        line-height: 28px;
+
+                        @include mq("tablet-wide") {
+                            font-size: 23px;
+                            line-height: 28px;
+                        }
                     }
                 }
 

@@ -27,7 +27,6 @@
     
                 h2 {
                     font-family: $font-4;
-                    font-size: 40px;
                     
                     @include mq("tablet-wide") {
                         @include font-source-sans($ff: $font-4, $size: 70px, $lh: 85px);
@@ -40,15 +39,15 @@
 
                 p {    
                     margin: 20px 0;
-                    @include font-source-sans($ff: $font-1, $size: 22px);
                     
                     @include mq("tablet-wide") {
-                        line-height: 1.5;
+                        @include font-source-sans($size: 22px, $lh: 23px);
                     }
                 }
     
                 .btn {    
                     margin: 20px 0 0;
+                    text-align: center;
                     
                     .apple, .google {
                         width: 250px;
@@ -63,6 +62,7 @@
 
                     .apple {
                         padding-top: 2px;
+                        margin-bottom: 10px;
                     }
 
                     .google {
@@ -74,8 +74,11 @@
                 }
 
                 .social-media {
-
                     margin: 32px 0 0;
+
+                    @include mq("phone-wide", "max") {
+                        text-align: center;
+                    }
 
                     i {
                         margin-right: 25px;
