@@ -11,9 +11,7 @@
 
             h2 {
                 margin-bottom: 26px;
-                font-family: "Inter SemiBold";
-                font-size: 32px;
-                line-height: 39px;
+                @include font-source-sans($ff: $font-3, $size: 32px, $lh: 39px);
             }
     
             h3 {

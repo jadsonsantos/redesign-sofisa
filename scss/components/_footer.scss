@@ -29,11 +29,8 @@
         .title {
             padding: 0 0 20px;
             display: block;
-            font-family: $font-4;
-            font-size: 19px;
-            line-height: 23px;
             text-transform: uppercase;
-            color: $color-4;
+            @include font-source-sans($ff: $font-4, $size: 19px, $colour: $color-4, $lh: 23px);
         }
     
         .links {

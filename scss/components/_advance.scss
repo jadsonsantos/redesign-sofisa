@@ -60,7 +60,7 @@
                         padding-bottom: 30px;
 
                         .value::before {
-                            content: "R$ ";
+                            @include pseudo(inline, relative, 'R$ ');
                         }
                     }
 
@@ -82,7 +82,7 @@
                     .calc-installments {
 
                         .value::after {
-                            content: "x";
+                            @include pseudo(inline, relative, 'x');
                         }
                     }
                 }

@@ -22,9 +22,6 @@
 
     h4 {
         margin-top: 20px;
-        font-family: $font-2;
-        font-size: 17px;
-        line-height: 20px;
-        color: $color-3;
+        @include font-source-sans($ff: $font-2, $size: 17px, $colour: $color-3, $lh: 20px);
     }
 }
