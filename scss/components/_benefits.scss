@@ -1,0 +1,26 @@
+.benefits {
+
+    .content {
+        margin: auto;
+        padding: 30px 70px;
+        width: 1170px;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 9px;
+        -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.16);
+           -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.16);
+                box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.16);
+    }
+
+    &-item {
+        text-align: center;
+    }
+
+    h4 {
+        margin-top: 20px;
+        font-family: $font-2;
+        font-size: 17px;
+        line-height: 20px;
+        color: $color-3;
+    }
+}
