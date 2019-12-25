@@ -59,3 +59,15 @@ $breakpoints: (
 $z-indexes: (
     "benefits-content"
 );
+
+// Flexbox
+
+@mixin flex-container($fd: false, $fw: false, $jc: false, $ai: false, $ac: false) {
+    display: flex;
+    @if $fd { flex-direction: $fd; }
+    @if $fw { flex-wrap: $fw; }
+    @if $jc { justify-content: $jc; }
+    @if $ai { align-items: $ai; }
+    @if $ac { align-content: $ac; }
+
+}

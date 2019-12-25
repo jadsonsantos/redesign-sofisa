@@ -10,31 +10,33 @@
     </head>
     <body>
 		<div class="wrapper">
-			<section class="fullscreen">
-				<header class="header">
-					<div class="container flex">
-						<div>
+			<header class="site-header">
+				<div class="site-header__container container">
+					<div class="site-header__inner">
+						<div class="site-header__logo">
 							<a href="/">
 								<img src="/images/sofisa-logo.png" alt="Logo Sofisa">
 							</a>
 						</div>
-						<nav>
-							<ul class="main-menu flex">
+						<nav class="site-header__nav">
+							<ul class="site-header__nav-main-menu">
 								<li><a href="#">investimentos</a></li>
 								<li><a href="#">Empréstimos</a></li>
 								<li><a href="#">Serviços</a></li>
 								<li><a href="#">Quem Somos</a></li>
 							</ul>
+							<ul class="site-header__nav-user-menu">
+								<li class="sign-in"><a href="#">Acessar conta</a></li>
+								<li class="sign-up"><a href="#">Criar minha conta</a></li>
+							</ul>
 						</nav>
-						<ul class="user-menu">
-							<li class="sign-in"><a href="#">Acessar conta</a></li>
-							<li class="sign-up"><a href="#">Criar minha conta</a></li>
-						</ul>
 					</div>
-				</header>
-				<div class="container">
-					<div class="composition">
-						<div class="composition-infos">
+				</div>
+			</header>
+			<section class="site-fullscreen">
+				<div class="site-fullscreen__container container">
+					<div class="site-fullscreen__composition">
+						<div class="site-fullscreen__composition-infos">
 							<h2>Aqui seu dinheiro<br> rende <span class="plus">+</span></h2>
 							<p>com as mesmas vantagens de um banco<br> convencional.</p>
 							<div class="btn">
@@ -61,7 +63,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="composition-image">
+						<div class="site-fullscreen__composition-image">
 							<img src="/images/celular.png" alt="Celular">
 						</div>
 					</div>

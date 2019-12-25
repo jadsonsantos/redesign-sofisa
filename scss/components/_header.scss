@@ -1,0 +1,56 @@
+@import "base/_main";
+
+.site-header {    
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    background-color: transparent;
+    
+    &__inner {
+        width: 100%;
+        padding-top: 25px;
+        @include flex-container($jc: space-between, $ai: center);
+    }
+
+    &__nav {
+        margin-left: 36px;
+        @include flex-container($fw: wrap, $ai: center);
+
+        &-main-menu {
+            @include flex-container($fw: wrap);
+            
+            a {
+    
+                &:hover {
+                    padding: 0 0 10px;
+                    border-bottom: 3px solid $color-5;
+                }
+            }
+        }
+    
+        &-user-menu {
+            @include flex-container($jc: flex-end);
+    
+            .sign-in {    
+                padding: 10px 20px;
+            }
+    
+            .sign-up {
+                @include btn($color-0, transparent, 5px);
+                text-transform: uppercase;
+                cursor: pointer;
+    
+                &:hover {
+                    
+                }
+            }
+        }
+
+        &-main-menu, &-user-menu {
+    
+            li  {
+                padding: 0 20px;
+            }
+        }
+    }
+}
