@@ -29,7 +29,7 @@
             }
     
             h3 {
-                @include font-source-sans($ff: $font-1, $colour: $color-3, $lh: 24px);
+                @include font-source-sans($colour: $color-3, $lh: 24px);
 
                 @include mq("tablet-wide") {
                     font-size: 20px;
@@ -80,7 +80,6 @@
                     }
 
                     .calc-title {
-                        font-family: $font-1;
 
                         @include mq("tablet-wide") {
                             @include font-source-sans($size: 22px, $lh: 26px);
@@ -228,7 +227,6 @@
                         }
 
                         h5 {
-                            font-family: $font-1;
 
                             @include mq("tablet-wide") {
                                 @include font-source-sans($size: 17px, $lh: 22px);

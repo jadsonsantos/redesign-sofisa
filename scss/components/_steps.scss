@@ -37,12 +37,21 @@
             flex-wrap: wrap;
             justify-content: space-between;
 
+            
+            @include mq("phone-wide", "max") {
+                justify-content: center;
+                flex-direction: column;
+                width: 40%;
+                margin: auto;
+            }
+
             span {
                 display: block;
                 text-align: center;
             }
 
             .step {
+                margin-bottom: 30px;
 
                 &-number {
                     padding: 33px 42px;
