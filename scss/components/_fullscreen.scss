@@ -1,4 +1,4 @@
-.site-fullscreen {
+.site-hero {
     background-image: url('/images/header-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,13 +12,15 @@
         height: 790px;;
     }
     
-    &__composition {
+    &__content {
+        width: 100%;
         padding: 50px 0 0;
-        @include flex-container($jc: center, $ai: center);
+        @include flex-container($jc: space-between, $ai: center);
         
         &-infos {
             
-            @include mq("tablet-wide") {
+            @include mq("tablet-wide") {    
+                margin-bottom: 50px;
                 width: 615px;
             }
 
@@ -42,36 +44,6 @@
                 }
             }
 
-            .btn {    
-                margin: 20px 0 0;
-
-                @include mq("phone-wide", max) {
-                    text-align: center;
-                }
-
-                .apple, .google {
-                    width: 250px;
-                    height: 60px;
-                    @include btn($color-0, transparent, 5px);
-
-                    figure {
-                        @include flex-container($jc: center);
-                    }
-                }
-
-                .apple {
-                    padding-top: 2px;
-                    margin-bottom: 10px;
-                }
-
-                .google {
-
-                    @include mq("tablet-wide") {
-                        margin-left: 20px;
-                    }
-                }
-            }
-
             .social-media {
                 margin: 32px 0 0;
 
@@ -81,6 +53,36 @@
 
                 i {
                     margin-right: 25px;
+                }
+            }
+        }
+
+        &-btn {
+            margin: 20px 0 0;
+
+            @include mq("phone-wide", max) {
+                text-align: center;
+            }
+
+            .apple, .google {
+                width: 250px;
+                height: 60px;
+                @include btn($color-0, transparent, 5px);
+
+                figure {
+                    @include flex-container($jc: center);
+                }
+            }
+
+            .apple {
+                padding-top: 2px;
+                margin-bottom: 10px;
+            }
+
+            .google {
+
+                @include mq("tablet-wide") {
+                    margin-left: 20px;
                 }
             }
         }
