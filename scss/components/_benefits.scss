@@ -1,12 +1,12 @@
 @import "base/mixins";
 
 .benefits {
-
-    &-content {
+    
+    &__container {
         padding: 30px 70px;
-        justify-content: space-around;
         background-color: $white;
         z-index: z("benefits-content");
+        @include flex-container($jc: space-around);
         
         @include mq("tablet-wide") {
             margin: -70px auto 0;
@@ -18,12 +18,16 @@
         }
     }
 
-    &-item {
+    &__item {
         text-align: center;
-    }
-
-    h4 {
-        margin-top: 20px;
-        @include font-source-sans($ff: $font-2, $size: 17px, $colour: $color-3, $lh: 20px);
+        
+        @include mq("phone-wide", max) {
+            padding: 30px 0;
+        }
+        
+        h4 {
+            margin-top: 20px;
+            @include font-source-sans($ff: $font-2, $size: 17px, $colour: $color-3, $lh: 20px);
+        }
     }
 }
