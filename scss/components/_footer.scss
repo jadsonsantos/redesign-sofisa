@@ -7,8 +7,8 @@
         padding: 100px 0 130px;
     }
 
-    .container {
-        justify-content: space-between;
+    &__container {
+        @include flex-container($jc: space-between);
         border-bottom: 1px solid rgba(73, 73, 73, $alpha: 0.4);
 
         @include mq("tablet-wide") {
@@ -18,59 +18,57 @@
         & > div {
             margin-bottom: 40px;
         }
+    }
 
-        .about {
-            line-height: 2;
-            color: $color-3;
-            
-            @include mq("tablet-wide") {
-                width: 350px;
-            }
-
-            img {
-                margin-bottom: 30px;
-            }
+    &__about {
+        line-height: 2;
+        color: $color-3;
+        
+        @include mq("tablet-wide") {
+            width: 350px;
         }
-    
-        .title {
+
+        img {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__links {
+        
+        @media (min-width: 1024px) {
+            padding-left: 20px;
+        }
+
+        &-title {
             padding: 0 0 20px;
             display: block;
             text-transform: uppercase;
             @include font-source-sans($ff: $font-4, $size: 19px, $colour: $color-4, $lh: 23px);
         }
-    
-        .links {
-            
-            @media (min-width: 1024px) {
-                padding-left: 20px;
-            } 
-    
-            ul {
-    
-                li {
-                
-                    margin-bottom: 20px;
-        
-                    a {
-                        color: $color-3;
-                    }
-                }
-            }
 
-            .social {
+        ul {
 
-                i {
-                    padding-right: 20px;
-                    cursor: pointer;
-                    color: $color-4;    
-                    transition: color .4s cubic-bezier(.23,1,.32,1);
-
-                    &:hover {
-                        color: $color-5;
-                    }
+            li {
+                margin-bottom: 20px;
+    
+                a {
+                    color: $color-3;
                 }
             }
         }
     }
 
+    &__social {
+
+        i {
+            padding-right: 20px;
+            cursor: pointer;
+            color: $color-4;    
+            transition: color .4s cubic-bezier(.23,1,.32,1);
+
+            &:hover {
+                color: $color-5;
+            }
+        }
+    }
 }
