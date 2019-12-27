@@ -1,241 +1,238 @@
 @import "base/main";
 
 .advance {
-    margin: 80px 0 30px;
+    padding: 80px 0 30px;
     color: $color-3;
     
     @include mq("tablet-wide") {
-        margin-top: 130px;
+        padding: 140px 0 110px;
     }
 
-    .container {
+    &__container {
         flex-direction: column;
+    }
 
-        .advance-presentation {
-            margin-bottom: 80px;
-            text-align: center;
-            
+    &__presentation {
+        margin-bottom: 80px;
+        text-align: center;
+        
+        @include mq("tablet-wide") {
+            margin-bottom: 120px;
+        }
+
+        h2 {
+            margin-bottom: 18px;
+            @include font-source-sans($ff: $font-3, $colour: $color-6);
+
             @include mq("tablet-wide") {
-                margin-bottom: 120px;
-            }
-
-            h2 {
-                margin-bottom: 18px;
-                @include font-source-sans($ff: $font-3, $colour: $color-6);
-
-                @include mq("tablet-wide") {
-                    font-size: 46px;
-                }
-            }
-    
-            h3 {
-                @include font-source-sans($colour: $color-3, $lh: 24px);
-
-                @include mq("tablet-wide") {
-                    font-size: 20px;
-                }
+                font-size: 46px;
             }
         }
-        
 
-        .advance-calc {
-            justify-content: space-around;
+        h3 {
+            @include font-source-sans($colour: $color-3, $lh: 24px);
 
-            .advance-calculator {
+            @include mq("tablet-wide") {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__calc {
+        @include flex-container($fw: wrap, $jc: space-around);
+
+        .advance-calculator {
+                -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
+                   -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
+                        box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
+            border-radius: 8px;
+
+            @include mq("phone-wide", max) {
                 margin-bottom: 80px;
-                 -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
-                    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
-                         box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
-                border-radius: 8px;
+            }
 
-                @include mq("tablet-wide") {
-                    margin-bottom: 100px;
-                    width: 488px;
-                }
+            @include mq("tablet-wide") {
+                width: 488px;
+            }
 
-                .presentation {
-                    padding: 21px 0 30px;
-                    border-bottom: 1px solid $color-9;
-                    
-                    h3 {
-                        font-family: $font-3;
-                        text-align: center;
+            .presentation {
+                padding: 21px 0 30px;
+                border-bottom: 1px solid $color-9;
+                
+                h3 {
+                    font-family: $font-3;
+                    text-align: center;
 
-                        @include mq("tablet-wide") {
-                            font: 24px;
-                        }
+                    @include mq("tablet-wide") {
+                        font: 24px;
                     }
                 }
+            }
 
-                .scale {
-                    padding: 26px 26px 30px;
-                    border-bottom: 1px solid $color-9;
+            .scale {
+                padding: 26px 26px 30px;
+                border-bottom: 1px solid $color-9;
 
-                    .calc-amount {
-                        padding-bottom: 30px;
+                .calc-amount {
+                    padding-bottom: 30px;
 
-                        .value::before {
-                            @include pseudo(inline, relative, 'R$ ');
-                        }
-                    }
-
-                    .calc-title {
-
-                        @include mq("tablet-wide") {
-                            @include font-source-sans($size: 22px, $lh: 26px);
-                        }
-                    }
-
-                    .calc-container {
-                        display: flex;
-                        justify-content: space-between;
-                        padding-bottom: 15px;
-                    }
-                    
-                    .amount, .installments {
-                        font-family: "Inter SemiBold";
-
-                        @include mq("tablet-wide") {
-                            font-size: 22px;
-                        }
-                    }
-
-                    .calc-installments {
-
-                        .value::after {
-                            @include pseudo(inline, relative, 'x');
-                        }
+                    .value::before {
+                        @include pseudo(inline, relative, 'R$ ');
                     }
                 }
 
-                .slide-container {
-                    width: 100%;
+                .calc-title {
 
-                    .slider {
-                        -webkit-appearance: none;
-                        width: 100%;
-                        height: 7px;
-                        border-radius: 5px;  
-                        background: #d3d3d3;
-                        outline: none;
-                        opacity: 0.7;
-                        -webkit-transition: .2s;
-                        transition: opacity .2s;
-                    }
-                      
-                    .slider::-webkit-slider-thumb {
-                        -webkit-appearance: none;
-                        appearance: none;
-                        width: 25px;
-                        height: 25px;
-                        border-radius: 50%; 
-                        background: $white;
-                        border: 7px solid $color-5;
-                        cursor: pointer;
-                    }
-                      
-                    .slider::-moz-range-thumb {
-                        width: 25px;
-                        height: 25px;
-                        border-radius: 50%;
-                        background: $white;
-                        border: 7px solid $color-5;
-                        cursor: pointer;
+                    @include mq("tablet-wide") {
+                        @include font-source-sans($size: 22px, $lh: 26px);
                     }
                 }
 
-                .calculator {
-                    padding: 26px;
+                .calc-container {
                     display: flex;
                     justify-content: space-between;
-                    
-                    .total-installment, .rate {
-                        display: flex;
-                        flex-direction: column;
-                    }
+                    padding-bottom: 15px;
+                }
+                
+                .amount, .installments {
+                    font-family: "Inter SemiBold";
 
-                    .total-installment {
-
-                        span:last-child {
-                            font-family: $font-3;
-
-                            @include mq("tablet-wide") {
-                                @include font-source-sans($size: 21px, $lh: 25px);
-                            }
-                        }
-                    }
-
-                    .rate {
-                        text-align: right;
-
-                        span:last-child {
-                            font-family: $font-3;
-
-                            @include mq("tablet-wide") {
-                                @include font-source-sans($size: 19px, $lh: 23px);                            
-                            }
-                        }
-                    }
-
-                    .result-title {
-
-                        @include mq("tablet-wide") {
-                            font-size: 23px;
-                            line-height: 28px;
-                        }
+                    @include mq("tablet-wide") {
+                        font-size: 22px;
                     }
                 }
 
-                .request-proposal {
-                
-                    button {
-                        width: 100%;
-                        padding: 26px 0;
-                        @include font-source-sans($ff: $font-3, $size: 24px, $colour: $white);
-                        
-                        background-color: $color-4;
-                        border: none;
-                        cursor: pointer;
+                .calc-installments {
+
+                    .value::after {
+                        @include pseudo(inline, relative, 'x');
                     }
                 }
             }
 
-            .advance-benefits {
+            .slide-container {
+                width: 100%;
+
+                .slider {
+                    -webkit-appearance: none;
+                    width: 100%;
+                    height: 7px;
+                    border-radius: 5px;  
+                    background: #d3d3d3;
+                    outline: none;
+                    opacity: 0.7;
+                    -webkit-transition: .2s;
+                    transition: opacity .2s;
+                }
+                    
+                .slider::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%; 
+                    background: $white;
+                    border: 7px solid $color-5;
+                    cursor: pointer;
+                }
+                    
+                .slider::-moz-range-thumb {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    background: $white;
+                    border: 7px solid $color-5;
+                    cursor: pointer;
+                }
+            }
+
+            .calculator {
+                padding: 26px;
                 display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-
-                .benefit {
+                justify-content: space-between;
+                
+                .total-installment, .rate {
                     display: flex;
-                    align-items: center;    
-                    margin-bottom: 50px;
+                    flex-direction: column;
+                }
 
-                    figure {
-                        display: flex;
-                    }
+                .total-installment {
 
-                    .info {
-                        margin-left: 28px;
+                    span:last-child {
+                        font-family: $font-3;
 
-                        h4 {
-                            font-family: $font-3;
-                            margin-bottom: 10px;
-                            
-                            @include mq("tablet-wide") {
-                                @include font-source-sans($size: 25px, $lh: 30px);
-                            }
-                        }
-
-                        h5 {
-
-                            @include mq("tablet-wide") {
-                                @include font-source-sans($size: 17px, $lh: 22px);
-                            }
+                        @include mq("tablet-wide") {
+                            @include font-source-sans($size: 21px, $lh: 25px);
                         }
                     }
+                }
+
+                .rate {
+                    text-align: right;
+
+                    span:last-child {
+                        font-family: $font-3;
+
+                        @include mq("tablet-wide") {
+                            @include font-source-sans($size: 19px, $lh: 23px);                            
+                        }
+                    }
+                }
+
+                .result-title {
+
+                    @include mq("tablet-wide") {
+                        font-size: 23px;
+                        line-height: 28px;
+                    }
+                }
+            }
+
+            .request-proposal {
+            
+                button {
+                    width: 100%;
+                    padding: 26px 0;
+                    @include font-source-sans($ff: $font-3, $size: 24px, $colour: $white);
+                    
+                    background-color: $color-4;
+                    border: none;
+                    cursor: pointer;
                 }
             }
         }
     }
-    
+
+    &__benefits {
+        @include flex-container($fd: column, $jc: space-around);
+
+        &-item {
+            @include flex-container($ai: center);
+            padding-bottom: 50px;
+
+            figure {
+                @include flex-container();
+            }
+        }
+
+        &-info {
+            margin-left: 28px;
+
+            h4 {
+                font-family: $font-3;
+                margin-bottom: 10px;
+                
+                @include mq("tablet-wide") {
+                    @include font-source-sans($size: 25px, $lh: 30px);
+                }
+            }
+
+            h5 {
+
+                @include mq("tablet-wide") {
+                    @include font-source-sans($size: 17px, $lh: 22px);
+                }
+            }
+        }
+    }
 }
