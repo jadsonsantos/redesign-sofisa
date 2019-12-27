@@ -7,13 +7,13 @@
         padding: 110px 0 167px;
     }
 
-    &-content {
-        justify-content: space-between;
+    &__content {
+        @include flex-container($fw: wrap, $fd: column, $jc: space-between);
     }
 
-    &-infos {
+    &__infos {
 
-        .steps-text {
+        &-text {
             margin-bottom: 23px;
             color: $white;
 
@@ -30,37 +30,32 @@
                 line-height: 24px;
             }
         }
+    }
 
+    &__path {
+        @include flex-container($fw: wrap, $jc: space-between);
+        
+        @include mq("phone-wide", "max") {
+            @include flex-container($fd: column, $jc: center);
+            width: 40%;
+            margin: auto;
+        }
 
-        .steps-path {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+        span {
+            display: block;
+            text-align: center;
+        }
 
-            
-            @include mq("phone-wide", "max") {
-                justify-content: center;
-                flex-direction: column;
-                width: 40%;
-                margin: auto;
-            }
+        &-item {
+            margin-bottom: 30px;
+        }
 
-            span {
-                display: block;
-                text-align: center;
-            }
-
-            .step {
-                margin-bottom: 30px;
-
-                &-number {
-                    padding: 33px 42px;
-                    margin-bottom: 23px;
-                    border: 2px solid $white;
-                    border-radius: 50%;
-                    @include font-source-sans($ff: $font-4, $size: 35px, $lh: 42px);
-                }
-            }
+        &-number {
+            padding: 33px 42px;
+            margin-bottom: 23px;
+            border: 2px solid $white;
+            border-radius: 50%;
+            @include font-source-sans($ff: $font-4, $size: 35px, $lh: 42px);
         }
     }
 }
