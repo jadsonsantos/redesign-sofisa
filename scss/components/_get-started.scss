@@ -4,19 +4,16 @@
         margin-top: 142px;
     }
 
-    &-content {
+    &__content {
         background-image: url("/images/investidor.png");
         background-repeat: no-repeat;
         background-position-x: left;
         height: 660px;
 
-        
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        @include flex-container($jc: flex-end, $ai: center);
     }
 
-    &-infos {
+    &__infos {
         padding: 40px 20px;
         position: absolute;
         background-color: $color-0;
@@ -30,16 +27,16 @@
             box-shadow: 0 4px 8px 0 rgba(234, 234, 234, 0.7), 0 6px 20px 0 rgba(218, 214, 214, 0.5);
         }
 
-        .title {
+        &-title {
             @include font-source-sans($ff: $font-3, $size: 25px);                
         }
 
-        .text {
+        &-text {
             color: $color-3;
             margin: 50px 0;
         }
 
-        .apply {
+        &-apply {
 
             a {
                 @include btn($color-0, $color-4, 5px);
