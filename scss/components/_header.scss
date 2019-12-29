@@ -5,20 +5,78 @@
     width: 100%;
     color: #fff;
     background-color: transparent;
+
+    &.active {
+        position: fixed;
+        top: 0;
+        z-index: z("site-header");
+        background-color: $color-6;
+    }
     
     &__inner {
         width: 100%;
-        padding-top: 25px;
-        @include flex-container($jc: space-between, $ai: center);
+        margin: 25px 0;
+
+        @include mq("tablet-wide") {
+            @include flex-container($jc: space-between, $ai: center);
+        }
+    }
+
+    &__logo {
+        @include mq("tablet", max) {
+            float: left;
+        }
+    }
+
+    &__btn {
+        display: none;
+
+        @include mq("tablet", max) {
+            display: block;
+            float: right;
+            cursor: pointer;
+        }
     }
 
     &__nav {
-        margin-left: 36px;
-        @include flex-container($fw: wrap, $ai: center);
+
+        &--mobile {
+
+            @include mq("tablet", max) {
+                display: none;
+                float: left;
+    
+                &.active {
+                    position: fixed;
+                    background-color: $color-6;
+                    bottom: 0;
+                    top: 90px;
+                    left: 0;
+                    right: 0;
+                    z-index: z("site-header__nav--mobile");
+                    display: block;
+                }
+            }
+        }
+
+        @include mq("tablet-wide") {
+            margin-left: 36px;
+            @include flex-container($fw: wrap, $ai: center);
+        }
 
         &-main-menu {
-            @include flex-container($fw: wrap);
+
+            @include mq("tablet", max) {
+                
+                li {    
+                    margin: 20px auto;
+                }
+            }
             
+            @include mq("tablet-wide") {
+                @include flex-container($fw: wrap);
+            }
+
             a {
     
                 &:hover {
@@ -29,8 +87,19 @@
         }
     
         &-user-menu {
-            @include flex-container($jc: flex-end);
-    
+            @include mq("tablet", max) {                
+                margin-bottom: 30px;
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                text-align: center;
+            }
+
+            @include mq("tablet-wide") {
+                @include flex-container($jc: flex-end);
+            }
+
             .sign-in {    
                 padding: 10px 20px;
             }

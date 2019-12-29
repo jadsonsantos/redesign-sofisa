@@ -57,7 +57,9 @@ $breakpoints: (
     }
 }
 $z-indexes: (
-    "benefits-content"
+    "benefits-content",
+    "site-header",
+    "site-header__nav--mobile"
 );
 
 // Flexbox
