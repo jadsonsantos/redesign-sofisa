@@ -8,7 +8,7 @@
     }
 
     &__content {
-        @include flex-container($fw: wrap, $fd: column, $jc: space-between);
+        @include flex-container($fw: wrap, $jc: space-between);
     }
 
     &__infos {
