@@ -44,7 +44,11 @@
                 width: 275px;
                 height: 62px;
                 text-align: center;
-                @include font-source-sans($ff: $font-2, $size: 23px, $weight: 700, $lh: 28px);                
+                @include font-source-sans($ff: $font-2, $size: 20px, $weight: 700, $lh: 28px);     
+                
+                @include mq("tablet-wide") {
+                    font-size: 23px;
+                }
             }
         }
     }

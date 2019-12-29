@@ -193,11 +193,15 @@
                 button {
                     width: 100%;
                     padding: 26px 0;
-                    @include font-source-sans($ff: $font-3, $size: 24px, $colour: $white);
+                    @include font-source-sans($ff: $font-3, $size: 20px, $colour: $white);
                     
                     background-color: $color-4;
                     border: none;
                     cursor: pointer;
+
+                    @include mq("tablet-wide") {
+                        font-size: 24px;
+                    }
                 }
             }
         }
