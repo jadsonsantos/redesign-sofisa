@@ -60,10 +60,6 @@
         &-btn {
             margin: 20px 0 0;
 
-            @include mq("phone-wide", max) {
-                text-align: center;
-            }
-
             .apple, .google {
                 width: 250px;
                 height: 60px;

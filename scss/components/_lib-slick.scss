@@ -1,0 +1,29 @@
+.slick {
+
+    &-slide {
+
+        img {
+            margin: auto;
+        }
+    }
+
+    &-arrow {
+        position: absolute;
+        top: 40%;
+        width: 25px;
+        height: 25px;
+        transition: .5s;
+        float: left;
+        box-shadow: -2px 2px 0 rgba(0, 0, 0, .3);
+    }
+
+    &-prev {
+        left: 15px;
+        transform: rotate(45deg);
+    }
+
+    &-next {
+        right: 15px;
+        transform: rotate(225deg);
+    }
+}

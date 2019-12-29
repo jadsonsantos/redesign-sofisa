@@ -8,8 +8,21 @@ var sofisa = {
         })
     },
 
+    benefitsSlick: function() {
+
+        if ($(window).width() <= 768) {
+            
+            $('.benefits__container').slick({
+                autoplay: true,
+                prevArrow: "<i class='slick-prev'></i>",
+                nextArrow: "<i class='slick-next'></i>"
+            });
+        }
+    },
+
     init: function() {
         this.menuMobile();
+        this.benefitsSlick();
     }
 }
 
