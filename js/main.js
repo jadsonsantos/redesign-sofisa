@@ -24,6 +24,7 @@ var sofisa = {
             
             $('.benefits__container').slick({
                 autoplay: true,
+                dots: true,
                 prevArrow: "<i class='slick-prev'></i>",
                 nextArrow: "<i class='slick-next'></i>"
             });

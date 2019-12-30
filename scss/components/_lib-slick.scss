@@ -17,6 +17,32 @@
         box-shadow: -2px 2px 0 rgba(0, 0, 0, .3);
     }
 
+    &-dots {
+        margin: 20px 0 0;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        button {
+            font-size: 0;
+            border-radius: 50%;
+            border: none;
+            height: 20px;
+            width: 20px;
+            background-color: $color-4;
+        }
+    }
+
+    &-active {
+
+        button {
+            background-color: $color-3;
+        }
+    }
+
     &-prev {
         left: 15px;
         transform: rotate(45deg);
