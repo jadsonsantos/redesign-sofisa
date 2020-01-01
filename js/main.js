@@ -1,3 +1,7 @@
+var utils = {
+
+}
+
 var sofisa = {
 
     menuMobile: function() {
@@ -9,12 +13,29 @@ var sofisa = {
     },
 
     scale: function() {
-    
-        var scale = $(".scale"),
-            inputRange = scale.find("input[type=range]");
-    
-        inputRange.on("input", function() {
-            $(this).parent().parent().find(".value").html(this.value);
+
+        $(".calc-amount .slider").slider({
+            range: "min",
+            value: 130000,
+            step: 5000,
+            min: 60000,
+            max: 150000,
+            slide: function(event, ui) {
+                $(this).css("background", "#D8D9D9");
+                $(this).parent().find(".value").html("R$ " + ui.value);
+            }
+        });
+
+        $(".calc-installments .slider").slider({
+            range: "min",
+            value: 36,
+            step: 1,
+            min: 12,
+            max: 60,
+            slide: function(event, ui) {
+                $(this).css("background", "#D8D9D9");
+                $(this).parent().find(".value").html(ui.value + "x");
+            }
         });
     },
 

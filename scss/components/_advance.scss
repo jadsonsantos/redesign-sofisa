@@ -75,10 +75,6 @@
 
                 .calc-amount {
                     padding-bottom: 30px;
-
-                    .value::before {
-                        @include pseudo(inline, relative, 'R$ ');
-                    }
                 }
 
                 .calc-title {
@@ -104,42 +100,30 @@
 
                 .calc-installments {
 
-                    .value::after {
-                        @include pseudo(inline, relative, 'x');
-                    }
                 }
             }
 
-            .slide-container {
+            .ui-slider {
+                -webkit-appearance: none;
                 width: 100%;
-
-                .slider {
-                    -webkit-appearance: none;
-                    width: 100%;
-                    height: 7px;
-                    border-radius: 5px;  
-                    background: #d3d3d3;
-                    outline: none;
-                    opacity: 0.7;
-                    -webkit-transition: .2s;
-                    transition: opacity .2s;
+                height: 7px;
+                border-radius: 5px;
+                outline: none;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+                background: $color-10;
+                
+                &-range {
+                    background: $color-4;
                 }
-                    
-                .slider::-webkit-slider-thumb {
+
+                &-handle {
+                    top: -10px;
                     -webkit-appearance: none;
                     appearance: none;
                     width: 25px;
                     height: 25px;
                     border-radius: 50%; 
-                    background: $white;
-                    border: 7px solid $color-5;
-                    cursor: pointer;
-                }
-                    
-                .slider::-moz-range-thumb {
-                    width: 25px;
-                    height: 25px;
-                    border-radius: 50%;
                     background: $white;
                     border: 7px solid $color-5;
                     cursor: pointer;
