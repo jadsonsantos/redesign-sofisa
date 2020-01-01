@@ -9,6 +9,9 @@
 
     &__content {
         @include flex-container($fw: wrap, $jc: space-between);
+        @include mq("tablet", max) {
+            justify-content: center;
+        }
     }
 
     &__infos {

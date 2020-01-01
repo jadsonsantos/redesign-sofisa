@@ -47,7 +47,7 @@
                         box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
             border-radius: 8px;
 
-            @include mq("phone-wide", max) {
+            @include mq("tablet", max) {
                 margin-bottom: 80px;
             }
 
