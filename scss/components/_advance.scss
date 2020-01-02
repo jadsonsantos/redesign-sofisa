@@ -123,6 +123,7 @@
                     appearance: none;
                     width: 25px;
                     height: 25px;
+                    z-index: -1;
                     border-radius: 50%; 
                     background: $white;
                     border: 7px solid $color-5;

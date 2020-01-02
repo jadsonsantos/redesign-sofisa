@@ -9,6 +9,7 @@ var sofisa = {
             $(this).toggleClass("active");
             $(".site-header").toggleClass("active");
             $(".site-header__nav--mobile").toggleClass("active");
+            $("body").toggleClass("not-scroll");
         })
     },
 
