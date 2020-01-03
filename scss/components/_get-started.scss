@@ -20,7 +20,7 @@
         color: $color-4;
 
         @include mq("tablet-wide") {
-            padding: 80px 50px;
+            padding: 64px 80px 74px;
             width: 1085px;
             float: right;
             border-radius: 9px;
@@ -28,12 +28,15 @@
         }
 
         &-title {
-            @include font-source-sans($ff: $font-3, $size: 25px);                
+            max-width: 600px;
+            font-family: $font-3;
+            @include font-source-sans($size: 32px, $lh: 39px);                
         }
 
         &-text {
-            color: $color-3;
-            margin: 50px 0;
+            margin: 50px 0;    
+            max-width: 650px;
+            @include font-source-sans($ff: $font-1, $size: 23px, $lh: 28px, $colour: $color-3);
         }
 
         &-apply {
@@ -44,7 +47,7 @@
                 width: 275px;
                 height: 62px;
                 text-align: center;
-                @include font-source-sans($ff: $font-2, $size: 20px, $weight: 700, $lh: 28px);     
+                @include font-source-sans($ff: $font-3, $size: 20px, $lh: 28px);     
                 
                 @include mq("tablet-wide") {
                     font-size: 23px;

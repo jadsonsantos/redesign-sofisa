@@ -26,6 +26,7 @@
 
             h2 {
                 font-family: $font-4;
+                font-size: 36px;
                 
                 @include mq("tablet-wide") {
                     @include font-source-sans($size: 70px, $lh: 85px);
@@ -38,18 +39,16 @@
 
             p {    
                 margin: 20px 0;
-                
+                max-width: 450px;
+                @include font-source-sans($size: 20px, $lh: 30px);
+
                 @include mq("tablet-wide") {
-                    @include font-source-sans($size: 22px, $lh: 23px);
+                    @include font-source-sans($size: 22px, $lh: 33px);
                 }
             }
 
             .social-media {
                 margin: 32px 0 0;
-
-                @include mq("phone-wide", "max") {
-                    text-align: center;
-                }
 
                 i {
                     margin-right: 25px;

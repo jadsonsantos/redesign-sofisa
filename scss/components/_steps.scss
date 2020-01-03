@@ -17,11 +17,12 @@
     &__infos {
 
         &-text {
-            margin-bottom: 23px;
+            margin-bottom: 40px;
             color: $white;
 
             h2 {
-                margin-bottom: 26px;
+                margin-bottom: 26px;    
+                max-width: 535px;
                 
                 @include mq("tablet-wide") {
                     @include font-source-sans($ff: $font-3, $size: 32px, $lh: 39px);
@@ -29,8 +30,8 @@
             }
     
             h3 {
-                font-size: 17px;
-                line-height: 24px;
+                max-width: 435px;
+                @include font-source-sans($size: 17px, $lh: 26px);
             }
         }
     }
@@ -61,6 +62,10 @@
             border: 2px solid $white;
             border-radius: 50%;
             @include font-source-sans($ff: $font-4, $size: 35px, $lh: 42px);
+        }
+
+        &-text {
+            @include font-source-sans($size: 19px, $lh: 28px);
         }
     }
 }

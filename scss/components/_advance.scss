@@ -30,6 +30,8 @@
         }
 
         h3 {
+            margin: auto;
+            max-width: 520px;
             @include font-source-sans($colour: $color-3, $lh: 24px);
 
             @include mq("tablet-wide") {
@@ -123,7 +125,7 @@
                     appearance: none;
                     width: 25px;
                     height: 25px;
-                    z-index: -1;
+                    z-index: 1;
                     border-radius: 50%; 
                     background: $white;
                     border: 7px solid $color-5;
@@ -219,6 +221,7 @@
             h5 {
 
                 @include mq("tablet-wide") {
+                    max-width: 290px;
                     @include font-source-sans($size: 17px, $lh: 22px);
                 }
             }

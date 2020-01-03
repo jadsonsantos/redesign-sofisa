@@ -31,6 +31,10 @@
         img {
             margin-bottom: 30px;
         }
+
+        p {
+            @include font-source-sans($size: 16px, $lh: 25px);
+        }
     }
 
     &__links {
