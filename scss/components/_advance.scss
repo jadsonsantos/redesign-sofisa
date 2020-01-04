@@ -21,10 +21,12 @@
         }
 
         h2 {
-            margin-bottom: 18px;
+            margin-bottom: 40px;
             @include font-source-sans($ff: $font-3, $colour: $color-6);
-
+            font-size: 30px;
+            
             @include mq("tablet-wide") {
+                margin-bottom: 18px;
                 font-size: 46px;
             }
         }
@@ -48,6 +50,10 @@
                    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
                         box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
             border-radius: 8px;
+
+            @include mq("phone-wide", "max") {
+                width: 100%;
+            }
 
             @include mq("tablet", max) {
                 margin-bottom: 80px;

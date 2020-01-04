@@ -9,12 +9,17 @@
 
     &__content {
         @include flex-container($fw: wrap, $jc: space-between);
-        @include mq("tablet", max) {
+
+        @include mq("tablet-wide", max) {
             justify-content: center;
         }
     }
 
     &__infos {
+        
+        @include mq("tablet-wide", max) {
+            margin-bottom: 100px;    
+        }
 
         &-text {
             margin-bottom: 40px;
@@ -23,9 +28,11 @@
             h2 {
                 margin-bottom: 26px;    
                 max-width: 535px;
+                font-family: $font-3;
+                @include font-source-sans($size: 28px, $lh: 40px);
                 
                 @include mq("tablet-wide") {
-                    @include font-source-sans($ff: $font-3, $size: 32px, $lh: 39px);
+                    @include font-source-sans($size: 32px, $lh: 39px);
                 }
             }
     
@@ -41,7 +48,7 @@
         
         @include mq("phone-wide", "max") {
             @include flex-container($fd: column, $jc: center);
-            width: 40%;
+            width: auto;
             margin: auto;
         }
 
@@ -56,7 +63,7 @@
 
         &-number {
             padding: 33px 42px;
-            margin-bottom: 23px;
+            margin: 0 auto 23px;
             height: 116px;
             width: 116px;
             border: 2px solid $white;

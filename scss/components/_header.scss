@@ -108,17 +108,17 @@
                 @include btn($color-0, transparent, 5px);
                 text-transform: uppercase;
                 cursor: pointer;
-    
-                &:hover {
-                    
-                }
             }
         }
 
         &-main-menu, &-user-menu {
     
             li  {
-                padding: 0 20px;
+                padding: 0 10px;
+                
+                @include mq("desktop") {
+                    padding: 0 20px;
+                }
             }
         }
     }

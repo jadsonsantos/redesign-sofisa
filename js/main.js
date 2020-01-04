@@ -48,7 +48,16 @@ var sofisa = {
                 autoplay: true,
                 dots: true,
                 prevArrow: "<i class='slick-prev'></i>",
-                nextArrow: "<i class='slick-next'></i>"
+                nextArrow: "<i class='slick-next'></i>",
+                responsive: [
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3                    
+                        }
+                    }
+                ]
             });
         }
     },
