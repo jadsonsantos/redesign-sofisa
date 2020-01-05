@@ -40,6 +40,24 @@ var sofisa = {
         });
     },
 
+    calculateAdvance: function() {
+
+        var calculator = $(".advance-calculator");
+
+        calculator.find("button").on("click", function() {
+
+            var amount = calculator.find(".amount.value"),
+                installments = calculator.find(".installments.value");
+            
+            amount = amount.text().replace("R$ ", "");
+            installments = installments.text().replace("x", "");
+
+            var result = parseInt(amount) / parseInt(installments);
+            result = result.toFixed(2);
+            calculator.find(".installment-result-value").html("R$ " + result);
+        });
+    },
+
     benefitsSlick: function() {
 
         if ($(window).width() <= 768) {
@@ -72,6 +90,7 @@ var sofisa = {
     init: function() {
         this.menuMobile();
         this.scale();
+        this.calculateAdvance();
         this.benefitsSlick();
     }
 }
