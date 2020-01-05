@@ -51,6 +51,13 @@ var sofisa = {
                 nextArrow: "<i class='slick-next'></i>",
                 responsive: [
                     {
+                        breakpoint: 415,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1                    
+                        }
+                    },
+                    {
                         breakpoint: 769,
                         settings: {
                             slidesToShow: 3,

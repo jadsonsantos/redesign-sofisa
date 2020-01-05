@@ -1,6 +1,6 @@
 .get-started {
     
-    @include mq("tablet-wide") {
+    @include mq("desktop") {
         margin-top: 142px;
     }
 

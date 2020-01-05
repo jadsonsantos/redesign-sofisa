@@ -45,6 +45,11 @@
     &__calc {
         @include flex-container($fw: wrap, $jc: space-around);
 
+        @include mq("tablet-wide", max) {
+            @include flex-container($fd: column, $jc: center);
+            margin: auto;
+        }
+
         .advance-calculator {
                 -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
                    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.16);
@@ -55,7 +60,7 @@
                 width: 100%;
             }
 
-            @include mq("tablet", max) {
+            @include mq("tablet-wide", max) {
                 margin-bottom: 80px;
             }
 
