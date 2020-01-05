@@ -58,7 +58,7 @@
 
         &-btn {
             margin: 20px 0 0;
-            @include flex-container($fw: wrap, $jc: space-between);
+            @include flex-container($fw: wrap, $jc: flex-start);
 
             .apple, .google {
                 width: 250px;
@@ -73,6 +73,10 @@
             .apple {
                 padding-top: 2px;
                 margin-bottom: 10px;
+
+                @include mq("phone-wide") {
+                    margin-right: 30px;
+                }
             }
         }
 
