@@ -99,4 +99,5 @@ var sofisa = {
 $(document).ready(function() {
 
     sofisa.init();
+    AOS.init();
 });
