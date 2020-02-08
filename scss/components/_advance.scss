@@ -104,7 +104,7 @@
                 }
                 
                 .amount, .installments {
-                    font-family: "Inter SemiBold";
+                    font-family: $font-3;
 
                     @include mq("tablet-wide") {
                         font-size: 22px;
